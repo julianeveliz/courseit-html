@@ -9,6 +9,7 @@
             margin-top: 15px;
             margin-bottom: 5px;
             font-size: 20px;
+            font-weight: bold;
         }
 
         .chbx_labels {
@@ -16,10 +17,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             font-size: 16px;
-        }
-
-        .chbx_inputs {
-            display: inline;
+            font-weight: normal;
         }
 
         .inputs {
@@ -29,7 +27,6 @@
         }
 
         .submit_button {
-            display: block;
             margin-top: 15px;
         }
 
@@ -61,17 +58,15 @@
                 <input class="inputs" autocomplete="off" type="text" name="person_last_name" maxlength="15">
             </label>
             
-
             <label class="labels">
                 Edad
                 <input class="inputs" autocomplete="off" type="text" name="person_age" maxlength="3">
             </label>
             
-
             <label class="labels">
                 Nacionalidad
 
-                <select name="person_nationality" class="inputs" id="person_nationality">
+                <select name="person_nationality" class="inputs">
                     <option value="AR">Argentina</option>
                     <option value="UR">Uruguaya</option>
                     <option value="RU">Rusa</option>
@@ -79,7 +74,7 @@
                 </select>
             </label>
 
-            <label class="labels">
+            <span class="labels">
                 Tecnologías
             
                 <label class="chbx_labels">
@@ -89,28 +84,28 @@
                 
                 <label class="chbx_labels">
                     <input type="checkbox" value="Fullstack" name="chbx_full">
-                    FullStack
+                    Fullstack
                 </label>
                 
                 <label class="chbx_labels">
                     <input type="checkbox" value="Backend" name="chbx_back">
                     Backend
                 </label>
-            </label>
+            </span>
 
-            <label class="labels">
+            <span class="labels">
                 ¿Sos mayor de edad?
             
                 <label class="chbx_labels">
-                    <input class="chbx_inputs" type="radio" name="chbx_age" value="yes">
+                    <input type="radio" name="chbx_adult" value="yes">
                     Sí
                 </label>
     
                 <label class="chbx_labels">
-                    <input class="chbx_inputs" type="radio" name="chbx_age" value="no">
+                    <input type="radio" name="chbx_adult" value="no">
                     No
                 </label>            
-            </label>
+            </span>
 
             <input type="submit" class="submit_button">
         </form>
