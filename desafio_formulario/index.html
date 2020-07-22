@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Formulario</title>
+
+    <style>
+        .labels {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        .chbx_labels {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .chbx_inputs {
+            display: inline;
+        }
+
+        .inputs {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .submit_button {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .hr_separator {
+            width: 300px;
+            margin-left: 0;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Datos personales</h1>
+    </header>
+
+    <section>
+        <hr class="hr_separator">
+
+        <form action="">
+            <label class="labels">
+                Nombre
+                <input class="inputs" autocomplete="off" type="text" name="person_name" maxlength="15">
+            </label>
+
+            <label class="labels">
+                Apellido
+                <input class="inputs" autocomplete="off" type="text" name="person_last_name" maxlength="15">
+            </label>
+            
+
+            <label class="labels">
+                Edad
+                <input class="inputs" autocomplete="off" type="text" name="person_age" maxlength="3">
+            </label>
+            
+
+            <label class="labels">
+                Nacionalidad
+
+                <select name="person_nationality" class="inputs" id="person_nationality">
+                    <option value="AR">Argentina</option>
+                    <option value="UR">Uruguaya</option>
+                    <option value="RU">Rusa</option>
+                    <option value="ES">Española</option>
+                </select>
+            </label>
+
+            <label class="labels">
+                Tecnologías
+            
+                <label class="chbx_labels">
+                    <input type="checkbox" value="Frontend" name="chbx_front">
+                    Frontend
+                </label>
+                
+                <label class="chbx_labels">
+                    <input type="checkbox" value="Fullstack" name="chbx_full">
+                    FullStack
+                </label>
+                
+                <label class="chbx_labels">
+                    <input type="checkbox" value="Backend" name="chbx_back">
+                    Backend
+                </label>
+            </label>
+
+            <label class="labels">
+                ¿Sos mayor de edad?
+            
+                <label class="chbx_labels">
+                    <input class="chbx_inputs" type="radio" name="chbx_age" value="yes">
+                    Sí
+                </label>
+    
+                <label class="chbx_labels">
+                    <input class="chbx_inputs" type="radio" name="chbx_age" value="no">
+                    No
+                </label>            
+            </label>
+
+            <input type="submit" class="submit_button">
+        </form>
+    </section>
+
+</body>
+
+</html>
